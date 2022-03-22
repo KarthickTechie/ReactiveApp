@@ -1,0 +1,23 @@
+<h2>Welcome {{user.role}} : {{user.name}}</h2>
+<select name="headerselect" id="headerselect" (change)="onSelectHeader($event.target)">
+    <option value="all">Select Headers</option>
+    <option *ngFor="let h of header$ | async" [value]="h">{{h}}</option>
+</select>
+<div class="audit-container">
+    <div class="header">
+        <div class="header-content" *ngFor="let h of selectedHeaders$ | async">
+            {{h}}
+        </div>
+    </div>
+    <div class="content">
+    <div class="content-content" *ngFor="let v of selectedContent$ | async">
+        {{v}}
+    </div>
+    <div *ngFor="let x of selectedHeaders$ | async"></div>
+</div>
+</div>
+<button class="btn-theme" (click)="settheme('dark')">SetDarkTheme</button>
+<button class="btn-theme" (click)="settheme('light')">SetLightTheme</button>
+<!-- <p class="light">{{theme$ | async}}</p> -->
+
+

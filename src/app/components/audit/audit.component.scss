@@ -1,0 +1,46 @@
+.audit-container{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+    
+}
+
+.header{
+    display: flex;
+    width: auto;
+    height: 50px;
+    background-color: var(--page-light-fontcolor);
+    align-items: center;
+    border: 1px solid;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.header-content{
+    font-size: 12px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 100px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.content{
+    display: flex;
+    width: auto;
+    height: 50px;
+    background-color: rgb(153, 204, 248);
+    align-items: center;
+    border: 1px solid;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.content-content{
+    font-size: 12px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 100px;
+    word-wrap: break-word;
+    word-break: break-all;
+}

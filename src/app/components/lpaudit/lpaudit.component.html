@@ -1,0 +1,62 @@
+<div class="audit-container">
+        <div class="header-container" >
+          
+            <div class="header-content" *ngFor="let h of Headers$ | async">{{h}}</div>
+            
+        </div>
+   
+        
+        <div class="content-container">
+            <div class="content" *ngFor="let v of contents$ | async; let i = index">
+                <div class="content-text" *ngFor="let _v of v">
+                    <span *ngIf="_v == 'object' ">
+                        <button class="btn btn-link" (click)="showAuditData(i)">Show Auditdata</button>
+                    </span>
+                    <span *ngIf="_v != 'object' ">{{_v}}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <button class="btn btn-primary" (click)="add()">Add To Cart</button> -->
+        <!-- <app-loader></app-loader> -->
+
+        <div class="productlist">
+          <p *ngFor="let product of products; let i = index">
+            {{product.productName}} 
+            {{product.productPrice}}
+            <span style="cursor: pointer;" (click)="incrementQuantity(i)">+</span>
+            {{product.quanityPurchased}}
+            <span style="cursor: pointer;" (click)="decrementQuantity(i)">-</span>
+            <span style="cursor: pointer;" (click)="addToCart(product)">Add To Cart</span>
+          </p>
+          
+        </div>
+
+
+</div>
+
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Audit Data</h4>
+      </div>
+      <div class="modal-body">
+        <!-- <p>{{_auditdata|json}}</p> -->
+        
+        <app-auditgrid [auditdata]="_auditdata"></app-auditgrid>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" 
+                (click)="closePopup()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

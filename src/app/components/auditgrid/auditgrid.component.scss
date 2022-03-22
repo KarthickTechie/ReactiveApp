@@ -1,0 +1,51 @@
+.audit-container{
+    display: flex;
+    width: 100%;
+    max-height: 300px;
+    flex-wrap: wrap;
+    overflow: auto;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    background-color: var(--page-light-fontcolor);
+    align-items: center;
+    border: 1px solid;
+}
+
+.header-content{
+    font-size: 12px;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+.content{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    height: auto;
+    background-color: rgb(153, 204, 248);
+    align-items: center;
+    border: 1px solid;
+}
+
+.content-content{
+    font-size: 12px;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+}

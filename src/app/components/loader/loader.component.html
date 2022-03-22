@@ -1,0 +1,8 @@
+<div class="progress-container">
+<div class="progress">
+    <div class="progress-done"  #progressbar>
+        <span *ngIf="progresspercentage == 100"> Completed</span> 
+        {{progresspercentage}} <span *ngIf="progresspercentage>5">%</span>
+    </div>
+</div>
+</div>

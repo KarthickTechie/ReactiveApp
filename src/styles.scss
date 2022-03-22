@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --page-dark-background:rgb(49, 43, 43);
+    --page-light-background:rgb(223, 204, 204); 
+    --page-dark-fontcolor:red; 
+    --page-light-fontcolor:rgb(233, 223, 223);    
+    --page-header-height:50px;
+    --page-header-width:100%;
+    --page-footer-width:100%;
+    --page-footer-height:50px;
+    --page-tafe-background:green;
+    --page-tmtl-background:yellow;
+    --page-tafe-fontcolor:white;
+    --page-tmtl-fontcolor:blue;
+    --page-header-background:grey;
+
+    .app-header-dark{
+        background-color: var(--page-dark-background);
+        color: var(--page-dark-fontcolor);
+        width: var(--page-header-width);
+        height: var(--page-header-height);
+    }
+    .app-footer-dark{
+        background-color: var(--page-dark-background);
+        color:var(--page-dark-fontcolor);
+        width: var(--page-footer-width);
+        height: var(--page-footer-height);
+    }
+    .tafe-theme{
+        background-color: var(--page-tafe-background);
+        color: var(--page-tafe-fontcolor);
+        font-family: 'Courier New', Courier, monospace;
+        .header{
+            display: flex;
+            width: auto;
+            height: 50px;
+            background-color: black;
+            align-items: center;
+            border: 1px solid;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        .btn-theme{
+            background-color: black;
+            color: white;
+            height: 40px;
+        }
+
+        
+    }
+    
+    .tmtl-theme{
+        background-color: var(--page-tmtl-background);
+        color: var(--page-tmtl-fontcolor);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.header{
+    display: flex;
+    width: auto;
+    height: 50px;
+    background-color: yellowgreen;
+    align-items: center;
+    border: 1px solid;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.btn-theme{
+    background-color: white;
+    color: black;
+    height: 40px;
+}
+    }
+
+
+
+}

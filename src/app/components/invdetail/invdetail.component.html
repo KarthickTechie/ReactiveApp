@@ -1,0 +1,13 @@
+<div class="i-data-cell" >
+    <div class="i-data-cell-header">
+
+        <span >{{product.itemtype}}</span><span style="margin-left:1em" 
+        (click)="viewClicked()">View</span>
+    </div>
+    <div class="i-data-cell-content" *ngIf="product['items'].length>0 && isShow" >
+        <ul style="padding-left:1em" >
+            <li *ngFor="let p of product['items']">{{p.name}}</li>
+        </ul>
+       
+    </div>
+</div>

@@ -1,0 +1,59 @@
+{
+    "inventory":[{
+        "itemtype":"grocery",
+        "items":[{
+            "id":1,
+            "name":"ToothPaste",
+            "price":50,
+            "catagory":"grocery"
+        },
+        {
+            "id":2,
+            "name":"ToothBrush",
+            "price":150,
+            "catagory":"grocery"
+        },
+        {
+            "id":3,
+            "name":"Himalaya Baby Soap",
+            "price":520,
+            "catagory":"grocery"
+        },
+        {
+            "id":4,
+            "name":"Himalaya Babyshampoo",
+            "price":150,
+            "catagory":"grocery"
+        }
+        ]
+    },
+    {
+        "itemtype":"Textile",
+        "items":[{
+            "id":5,
+            "name":"Soft Turkey Towel",
+            "price":50,
+            "catagory":"Textile"
+        },
+        {
+            "id":6,
+            "name":"Peppy Jeans",
+            "price":150,
+            "catagory":"Textile"
+        },
+        {
+            "id":7,
+            "name":"Kanchipuram Silk Saree",
+            "price":520,
+            "catagory":"Textile"
+        },
+        {
+            "id":4,
+            "name":"Silk Dothi",
+            "price":150,
+            "catagory":"grocTextileery"
+        }
+        ]
+    }]
+
+}

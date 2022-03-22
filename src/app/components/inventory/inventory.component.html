@@ -1,0 +1,9 @@
+<div class="inventory-container">
+    <div class="inventory-list" *ngIf="products$ | async as products">
+        <app-invdetail
+         (onViewClicked)="clickedView($event)"
+         [content]="product" *ngFor="let product of products" ></app-invdetail>
+
+    </div>
+</div>
+
